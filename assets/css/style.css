@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+:root {
+  --primary-color: #161B21;
+  --primary-color-darker: #0D1017;
+  --button-color: #123bc1;
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  color: white;
+}
+
+.container {
+ /* aspect-ratio: 1/1;*/
+  max-width: 920px;
+  width: 90%;
+  margin: 50px auto;
+  background-color: var(--primary-color-darker);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+img {
+  aspect-ratio: 1/1;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.quiz {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.buttons-inline{
+  text-align: center;
+}
+button {
+
+  border: 0;
+  padding: 15px;
+  margin-inline: 10px;
+  padding-inline: 30px;
+  border-radius: 9px;
+  font-size: 2em;
+  font-weight: bold;
+  background-color: var(--button-color);
+  color: white;
+
+}
+.no-horse:hover{
+  background-color: red;
+}
+.yes-horse:hover{
+  background-color: green;
+}
