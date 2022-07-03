@@ -80,3 +80,10 @@ a:hover{
   color: white;
   outline: wheat;
 }
+.reload{
+  margin: 0 auto;
+  background-color: rgb(80, 20, 245);
+}
+.reload:hover{
+  background-color: rgb(17, 233, 24);
+}

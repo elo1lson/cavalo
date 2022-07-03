@@ -3,17 +3,17 @@
 const horse = document.querySelector('img')
 const text = document.querySelector('.quiz')
 const buttons = document.querySelectorAll('.quiz-button')
+const reload =document.querySelector('.reload')
 let question = 0
 let sends = []
 
 function nextQuestion(n, s) {
   if (n == 1) text.innerHTML = 'Você tem certeza que é um humano?'
   if (n == 2) text.innerHTML = 'Cavalo?🐴'
-  if (n == 3) {
-    horse.src = './assets/img/newHorse.png'
-    text.innerHTML = 'iririnhonho?'
-  }
+  if (n == 3) text.innerHTML = 'iririnhonho?'
+
   if (n == 4) {
+    reload.style.display = 'block'
     if (s[0] || s[2] || s[3]) {
 
       finish('winner', 'Parabéns! Você é um cavalo!🐴👏')
@@ -43,5 +43,8 @@ document.addEventListener('click', ({ target }) => {
     sends.push(false)
     question++
     nextQuestion(question, sends)
+  }
+  if(target.classList.contains('reload')){
+    location.reload()
   }
 })
