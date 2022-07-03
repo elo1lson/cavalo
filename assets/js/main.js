@@ -16,7 +16,7 @@ function nextQuestion(n, s) {
   if (n == 4) {
     if (s[0] || s[2] || s[3]) {
 
-      finish('winner', 'Parabéns! Você é uma cavalo!🐴👏')
+      finish('winner', 'Parabéns! Você é um cavalo!🐴👏')
     } else {
       finish('lost', 'Infelizmente você não é um cavalo😪🐴😭')
     }
